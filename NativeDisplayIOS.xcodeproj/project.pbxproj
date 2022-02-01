@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15C5C99C3B775823A0D25677 /* Pods_NativeDisplayIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44DD0993CD708E3C8A04EB3 /* Pods_NativeDisplayIOS.framework */; };
 		1B8A820B27A89D8500DDECB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A820A27A89D8500DDECB2 /* AppDelegate.swift */; };
 		1B8A820D27A89D8500DDECB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A820C27A89D8500DDECB2 /* SceneDelegate.swift */; };
 		1B8A820F27A89D8500DDECB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A820E27A89D8500DDECB2 /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		1B8A821327A89D8600DDECB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B8A821627A89D8600DDECB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B8A821827A89D8600DDECB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4514D5AB023A26C5DEDA28E7 /* Pods-NativeDisplayIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeDisplayIOS.debug.xcconfig"; path = "Target Support Files/Pods-NativeDisplayIOS/Pods-NativeDisplayIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8FBC29A625FA077A02072688 /* Pods-NativeDisplayIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeDisplayIOS.release.xcconfig"; path = "Target Support Files/Pods-NativeDisplayIOS/Pods-NativeDisplayIOS.release.xcconfig"; sourceTree = "<group>"; };
+		A44DD0993CD708E3C8A04EB3 /* Pods_NativeDisplayIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NativeDisplayIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C5C99C3B775823A0D25677 /* Pods_NativeDisplayIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		171323E3F06F87DA6D56C82A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A44DD0993CD708E3C8A04EB3 /* Pods_NativeDisplayIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1B8A81FE27A89D8500DDECB2 = {
 			isa = PBXGroup;
 			children = (
 				1B8A820927A89D8500DDECB2 /* NativeDisplayIOS */,
 				1B8A820827A89D8500DDECB2 /* Products */,
+				955FBCFAA4421AA630C226E2 /* Pods */,
+				171323E3F06F87DA6D56C82A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = NativeDisplayIOS;
 			sourceTree = "<group>";
 		};
+		955FBCFAA4421AA630C226E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4514D5AB023A26C5DEDA28E7 /* Pods-NativeDisplayIOS.debug.xcconfig */,
+				8FBC29A625FA077A02072688 /* Pods-NativeDisplayIOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B8A821B27A89D8600DDECB2 /* Build configuration list for PBXNativeTarget "NativeDisplayIOS" */;
 			buildPhases = (
+				586129FB9D8639EC1380E79F /* [CP] Check Pods Manifest.lock */,
 				1B8A820327A89D8500DDECB2 /* Sources */,
 				1B8A820427A89D8500DDECB2 /* Frameworks */,
 				1B8A820527A89D8500DDECB2 /* Resources */,
+				E70244D17E092B2D667DF570 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		586129FB9D8639EC1380E79F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NativeDisplayIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E70244D17E092B2D667DF570 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NativeDisplayIOS/Pods-NativeDisplayIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NativeDisplayIOS/Pods-NativeDisplayIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NativeDisplayIOS/Pods-NativeDisplayIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B8A820327A89D8500DDECB2 /* Sources */ = {
@@ -283,6 +351,7 @@
 		};
 		1B8A821C27A89D8600DDECB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4514D5AB023A26C5DEDA28E7 /* Pods-NativeDisplayIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,7 +362,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.ctios.NativeDisplayIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.ctios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,6 +371,7 @@
 		};
 		1B8A821D27A89D8600DDECB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FBC29A625FA077A02072688 /* Pods-NativeDisplayIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,7 +382,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.ctios.NativeDisplayIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.ctios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

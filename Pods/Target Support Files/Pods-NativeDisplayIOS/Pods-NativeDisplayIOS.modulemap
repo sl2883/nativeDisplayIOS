@@ -1,0 +1,6 @@
+framework module Pods_NativeDisplayIOS {
+  umbrella header "Pods-NativeDisplayIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
